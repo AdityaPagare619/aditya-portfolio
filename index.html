@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Pagare — Applied AI & Edge Systems Engineer</title>
+  <meta name="description" content="Portfolio of Aditya Pagare: Applied AI Engineer, Edge AI & Embedded Systems specialist. Building AI systems that survive contact with the physical world — on-device runtimes, crash-safety validation, wearable sensors, and 15+ client-facing AI automation systems.">
+  <meta name="author" content="Aditya Pagare">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aditya Pagare — Applied AI & Edge Systems Engineer">
+  <meta property="og:description" content="Hardware-first. Constraint-driven. Built to survive contact with the real world.">
+  <meta property="og:image" content="assets/profile-photo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aditya Pagare — Applied AI & Edge Systems Engineer">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVIGATION
+     ═══════════════════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <span class="nav-logo-mark">AP</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO / LANDING
+     ═══════════════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <!-- Circuit background image -->
+  <div class="hero-bg">
+    <img src="assets/hero-circuit-bg.png" alt="" aria-hidden="true" loading="eager">
+  </div>
+
+  <!-- Animated circuit SVG overlay -->
+  <div class="hero-circuit-svg" aria-hidden="true">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <!-- Circuit traces -->
+      <path class="circuit-line" d="M0,450 L200,450 L250,400 L500,400 L550,350 L800,350 L850,400 L1100,400 L1150,450 L1440,450"/>
+      <path class="circuit-line" d="M0,300 L150,300 L200,350 L400,350 L450,300 L700,300 L750,250 L1000,250 L1050,300 L1200,300 L1250,350 L1440,350"/>
+      <path class="circuit-line" d="M0,600 L300,600 L350,550 L600,550 L650,600 L900,600 L950,650 L1200,650 L1250,600 L1440,600"/>
+      <path class="circuit-line" d="M720,0 L720,150 L680,200 L680,400 L720,450 L720,600 L680,650 L680,900"/>
+      <path class="circuit-line" d="M360,0 L360,200 L400,250 L400,450 L360,500 L360,700 L400,750 L400,900"/>
+      <!-- Circuit nodes -->
+      <circle class="circuit-node" cx="500" cy="400" r="4"/>
+      <circle class="circuit-node" cx="700" cy="300" r="4"/>
+      <circle class="circuit-node" cx="850" cy="400" r="3"/>
+      <circle class="circuit-node" cx="720" cy="450" r="5"/>
+      <circle class="circuit-node" cx="360" cy="500" r="3"/>
+    </svg>
+  </div>
+
+  <!-- Ambient glow effects -->
+  <div class="ambient-glow amber" style="width:600px;height:600px;top:-200px;right:-100px;" aria-hidden="true"></div>
+  <div class="ambient-glow steel" style="width:500px;height:500px;bottom:-200px;left:-100px;" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-logo-line">
+      <div class="hero-logo-badge">AP</div>
+    </div>
+
+    <h1 class="heading-xl hero-name">Aditya Pagare</h1>
+
+    <p class="hero-designations">
+      Applied AI Engineer <span class="sep">·</span> AI Systems Engineer <span class="sep">·</span> Edge AI &amp; Embedded Systems
+    </p>
+
+    <p class="hero-intro">
+      I build AI systems that have to survive contact with the physical world — on-device runtimes with hard RAM ceilings, crash-safety models validated against NHTSA forensic data, wearable sensors that can't afford a false positive. My foundation is Electronics &amp; Telecommunication Engineering, which means I think in hardware constraints first and software second: latency budgets, memory ceilings, signal noise, failure modes — then the model. Over the last three years I've shipped <span class="metric-inline">15+</span> client-facing AI automation systems through PageAI Systems, led applied-AI research validated on real NHTSA crash data (<span class="metric-inline">95.0%</span> detection accuracy), and am currently building a <span class="metric-inline">116,000</span>-line Rust/Android on-device AI agent runtime with <span class="metric-inline">2,051</span> tests. I work best in ambiguous, undocumented problem spaces — the kind where you have to study the domain before you're allowed to propose a solution. If you're building something that has to actually work on real hardware, in the real world, under real constraints — let's talk.
+    </p>
+
+    <div class="hero-cta-group">
+      <a href="#about" class="btn-primary" id="cta-learn-more">
+        Learn More About Me
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+      </a>
+      <a href="#contact" class="btn-secondary" id="cta-contact">
+        Get In Touch
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://github.com/AdityaPagare619" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" id="social-github">
+        <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/aditya-pagare-891606285" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" id="social-linkedin">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="mailto:adityapaagare619@gmail.com" class="social-icon" aria-label="Email" id="social-email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="section-separator"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ABOUT ME
+     ═══════════════════════════════════════════════════════════ -->
+<section class="section section-grid-bg" id="about">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-label">About Me</span>
+      <h2 class="heading-lg">Building AI From the Hardware Up</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-photo-wrapper reveal-left">
+        <img src="assets/profile-photo.png" alt="Aditya Pagare — Applied AI & Edge Systems Engineer" class="about-photo" loading="lazy">
+      </div>
+
+      <div class="about-content">
+        <p class="about-summary reveal delay-1">
+          I'm an applied AI and embedded systems engineer with a B.Tech in Electronics &amp; Telecommunication Engineering from PCET's Nutan College of Engineering and Research, Pune (2022–2026). My core strength is the bridge most AI engineers skip: hardware registers, sensors, signal processing, and embedded constraints, converted into working AI requirements and shipped systems. I operate across PyTorch, TensorFlow Lite, Rust, C/C++, Kotlin, and Python — but the tool selection always starts from the constraint, not the trend. Through PageAI Systems, my independent AI engineering practice, I've designed and deployed voice AI automation, RAG pipelines, and microservice architectures for <span class="metric-inline">15+</span> clients, standardizing six reusable integration layers along the way. In parallel, I lead applied research: VISTA, a forensic crash-detection system validated against NHTSA CISS data at <span class="metric-inline">95.0%</span> accuracy and <span class="metric-inline">11.98 km/h</span> Delta-V error, is currently in journal-track submission to IJVSS. My current flagship build, AURA, is a private on-device AI agent runtime — <span class="metric-inline">116K</span> lines of Rust and Android/Kotlin, <span class="metric-inline">2,051</span> tests, sub-<span class="metric-inline">10ms</span> deterministic intent matching with LLM fallback for novel requests, AES-256-GCM encrypted local memory, and a hard target of under <span class="metric-inline">500MB</span> RAM on phone-class hardware. What sets me apart isn't any single framework — it's that I approach AI problems from the hardware up, treat safety and reproducibility as first-class requirements rather than afterthoughts, and take direct ownership of ambiguous problems rather than waiting for a fully-specified spec.
+        </p>
+
+        <div class="mv-cards">
+          <div class="mv-card reveal-flip delay-2">
+            <div class="mv-card-inner">
+              <div class="mv-card-label">⎯ Mission</div>
+              <p class="mv-card-text">To build AI systems where the hardware constraints, safety guarantees, and real-world failure modes are treated as design inputs from day one — not retrofitted after a model works in a notebook.</p>
+            </div>
+          </div>
+          <div class="mv-card reveal-flip delay-3">
+            <div class="mv-card-inner">
+              <div class="mv-card-label">⎯ Vision</div>
+              <p class="mv-card-text">A future where on-device AI is the default, not the exception — where personal AI agents run privately on your own hardware, crash-safety and biomedical AI systems are forensically reproducible, and the boundary between embedded engineering and machine learning engineering disappears entirely.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-nav-buttons">
+          <a href="#experience" class="about-nav-btn reveal delay-4">
+            Work Experience <span class="btn-icon">→</span>
+          </a>
+          <a href="#education" class="about-nav-btn reveal delay-5">
+            Education <span class="btn-icon">→</span>
+          </a>
+          <a href="#projects" class="about-nav-btn reveal delay-5">
+            Projects <span class="btn-icon">→</span>
+          </a>
+          <a href="#skills" class="about-nav-btn reveal delay-6">
+            Skills <span class="btn-icon">→</span>
+          </a>
+          <a href="#achievements" class="about-nav-btn reveal delay-6">
+            Certifications <span class="btn-icon">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-separator"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     WORK EXPERIENCE
+     ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="experience">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-label">Work Experience</span>
+      <h2 class="heading-lg">Where I've Built &amp; Shipped</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="experience-timeline">
+
+      <!-- Role 1 — Applied AI Research Engineer -->
+      <div class="exp-card reveal-left">
+        <div class="exp-node">R1</div>
+        <div class="exp-card-body">
+          <div class="exp-card-header">
+            <div class="exp-meta-row">
+              <span class="exp-badge">Research / Applied</span>
+              <span class="exp-location">📍 Pune, India</span>
+              <span class="exp-duration">Jan 2026 – Jun 2026</span>
+            </div>
+            <h3 class="exp-title">Applied AI Research Engineer</h3>
+            <p class="exp-company">Nutan College of Engineering &amp; Research</p>
+            <p class="exp-subtitle">Crash-safety AI validation for insurance/fleet evidence review · NHTSA CISS validation · IJVSS journal-track manuscript</p>
+          </div>
+          <div class="exp-card-content">
+            <p class="exp-section-title">Key Responsibilities</p>
+            <ul class="exp-list">
+              <li class="reveal delay-1">Defined VISTA applied-AI research requirements from sensor, forensic, insurance, and fleet inputs, converting them into validation targets and manuscript-ready system requirements</li>
+              <li class="reveal delay-2">Built the validation layer using CrashBench outputs, 100+ vehicle observations, NHTSA CISS crash-pulse data, and simulation data</li>
+              <li class="reveal delay-3">Designed a tamper-evident evidence architecture spanning inertial sensing, OBD-II, audio/visual checks, and SHA-256/HMAC verification</li>
+              <li class="reveal delay-4">Prepared the system for journal-track manuscript submission, ensuring every claim was reproducible and reviewable</li>
+            </ul>
+            <p class="exp-section-title">Key Achievements</p>
+            <ul class="exp-list achievements">
+              <li class="reveal delay-5">Achieved <span class="metric-inline">95.0%</span> crash detection accuracy and <span class="metric-inline">11.98 km/h</span> Delta-V MAE across 160 stratified validation cases against NHTSA CISS ground truth</li>
+              <li class="reveal delay-6">Made crash forensics outputs reproducible and audit-ready for insurance and fleet use via a SHA-256/HMAC tamper-evident evidence chain</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 2 — Embedded Edge Systems Engineer -->
+      <div class="exp-card reveal-right">
+        <div class="exp-node">R2</div>
+        <div class="exp-card-body">
+          <div class="exp-card-header">
+            <div class="exp-meta-row">
+              <span class="exp-badge steel">Remote / Cross-functional</span>
+              <span class="exp-location">📍 Remote</span>
+              <span class="exp-duration">Feb 2026</span>
+            </div>
+            <h3 class="exp-title">Embedded Edge Systems Engineer</h3>
+            <p class="exp-company">Bio-Inspired Robotics Research Group</p>
+            <p class="exp-subtitle">Cross-functional rover systems engineering for a Theo Jansen walking rover — edge control, telemetry, sensors, and voice-command safety constraints</p>
+          </div>
+          <div class="exp-card-content">
+            <p class="exp-section-title">Key Responsibilities</p>
+            <ul class="exp-list">
+              <li class="reveal delay-1">Engineered and tested the rover control stack across Raspberry Pi edge control, Arduino motor/sensor loops, browser telemetry, and voice commands</li>
+              <li class="reveal delay-2">Converted rough-terrain behaviour into concrete engineering constraints for the controls and robotics teams</li>
+              <li class="reveal delay-3">Set uncertainty limits, safety boundaries, and fail-safe rules in collaboration with robotics, controls, and software engineers</li>
+              <li class="reveal delay-4">Validated field readiness across 5 distinct surface types</li>
+            </ul>
+            <p class="exp-section-title">Key Achievements</p>
+            <ul class="exp-list achievements">
+              <li class="reveal delay-5">Delivered sub-<span class="metric-inline">100ms</span> control latency and <span class="metric-inline">4.00Hz</span> telemetry with <span class="metric-inline">115–132ms</span> obstacle response time and only <span class="metric-inline">2.9%</span> ultrasonic sensor error</li>
+              <li class="reveal delay-6">Lifted voice-command parser accuracy from <span class="metric-inline">88.93%</span> to <span class="metric-inline">95.61%</span> through iterative constraint tuning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role 3 — AI Systems Engineer (Independent Practice) -->
+      <div class="exp-card reveal-left">
+        <div class="exp-node">R3</div>
+        <div class="exp-card-body">
+          <div class="exp-card-header">
+            <div class="exp-meta-row">
+              <span class="exp-badge">Founder-operated / Independent</span>
+              <span class="exp-location">📍 Pune, India</span>
+              <span class="exp-duration">Feb 2023 – Nov 2025</span>
+            </div>
+            <h3 class="exp-title">AI Systems Engineer (Independent Practice)</h3>
+            <p class="exp-company">PageAI Systems</p>
+            <p class="exp-subtitle">AI engineering practice for voice AI automation, client platforms, and microservice delivery</p>
+          </div>
+          <div class="exp-card-content">
+            <p class="exp-section-title">Key Responsibilities</p>
+            <ul class="exp-list">
+              <li class="reveal delay-1">Built voice AI automation covering real estate sales calls, lead qualification, property matching, CRM handoff, and escalation logic</li>
+              <li class="reveal delay-2">Designed and deployed cost-controlled LLM automation pipelines across client systems</li>
+              <li class="reveal delay-3">Standardised 6 reusable integration layers: voice/LLM wrappers, prompt routing, structured extraction, deterministic routing, dashboards, and REST/API handoffs</li>
+              <li class="reveal delay-4">Owned full delivery lifecycle: customer discovery, solution scoping, prototyping, and customer-facing delivery</li>
+            </ul>
+            <p class="exp-section-title">Key Achievements</p>
+            <ul class="exp-list achievements">
+              <li class="reveal delay-5">Delivered <span class="metric-inline">15+</span> client-facing AI automation and web systems over a <span class="metric-inline">33</span>-month independent practice</li>
+              <li class="reveal delay-6">Shipped a 6-microservice adaptive assessment platform using FastAPI, Node.js, PostgreSQL, Redis, Docker, and Bayesian Knowledge Tracing as a flagship example</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-separator"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     EDUCATION
+     ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="education">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-label">Education</span>
+      <h2 class="heading-lg">Academic Foundation</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="education-card reveal-drop">
+      <div class="education-card-icon">🎓</div>
+      <h3 class="edu-degree">Bachelor of Technology, Electronics &amp; Telecommunication Engineering</h3>
+      <p class="edu-institution">PCET's Nutan College of Engineering &amp; Research, Pune, India</p>
+      <div class="edu-meta">
+        <span class="edu-meta-item">📅 Aug 2022 – Jun 2026</span>
+        <span class="edu-meta-item">🎯 Full-time</span>
+      </div>
+      <p class="exp-section-title" style="margin-top:var(--space-lg);">Key Highlights</p>
+      <ul class="edu-highlights">
+        <li class="reveal delay-1">Focus areas: edge AI systems, embedded systems, AI/ML frameworks, IoT, signal processing, sensors, and microcontrollers</li>
+        <li class="reveal delay-2">Extended into backend/API design, databases, and cloud deployment — bridging hardware engineering with full-stack software systems</li>
+        <li class="reveal delay-3">Coursework and independent projects directly fed into shipped systems (AURA, VISTA, BFRB Sense) rather than staying academic-only</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="section-separator"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     PROJECTS
+     ═══════════════════════════════════════════════════════════ -->
+<section class="section section-grid-bg" id="projects">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-label">Projects</span>
+      <h2 class="heading-lg">Engineering That Ships</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 — AURA -->
+      <div class="project-card reveal">
+        <div class="project-visual">
+          <img src="assets/project-aura.png" alt="AURA — On-Device AI Agent Runtime visualization" loading="lazy">
+          <div class="project-visual-overlay"></div>
+          <span class="project-type-badge">Personal Flagship · Private Alpha</span>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">AURA — Private On-Device AI Agent Runtime</h3>
+            <span class="project-subtitle">Mar 2026 – Present</span>
+          </div>
+          <p class="project-desc">
+            A privacy-first on-device AI agent for reminders, routines, messages, and app actions, engineered to keep all personal context local and run within a hard memory budget on phone-class Android hardware. Combines a deterministic engine for repeat intents with LLM reasoning for novel requests, governed by typed action contracts and rollback paths.
+          </p>
+          <div class="project-outcomes">
+            <div class="outcome-box reveal-spring delay-1">
+              <span class="outcome-number">01</span>
+              <p class="outcome-text"><span class="metric-inline">116,000</span> lines of Rust and Android/Kotlin code, backed by <span class="metric-inline">2,051</span> tests</p>
+            </div>
+            <div class="outcome-box reveal-spring delay-2">
+              <span class="outcome-number">02</span>
+              <p class="outcome-text">Sub-<span class="metric-inline">10ms</span> matching latency for repeat intents via the deterministic engine layer</p>
+            </div>
+            <div class="outcome-box reveal-spring delay-3">
+              <span class="outcome-number">03</span>
+              <p class="outcome-text">Targeted and held under <span class="metric-inline">500MB</span> RAM on phone-class hardware</p>
+            </div>
+            <div class="outcome-box reveal-spring delay-4">
+              <span class="outcome-number">04</span>
+              <p class="outcome-text">Private memory secured with SQLite, vector + full-text retrieval, <span class="metric-inline">AES-256-GCM</span>/Argon2id vaulting, consent gates, and notification safeguards</p>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">Rust</span>
+            <span class="tech-pill">Android/Kotlin</span>
+            <span class="tech-pill">JNI</span>
+            <span class="tech-pill">Local LLM Inference</span>
+            <span class="tech-pill">SQLite</span>
+            <span class="tech-pill">Vector Search</span>
+            <span class="tech-pill">FTS5</span>
+            <span class="tech-pill">AES-256-GCM</span>
+            <span class="tech-pill">Argon2id</span>
+            <span class="tech-pill">Agent Workflows</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 — VISTA -->
+      <div class="project-card reveal">
+        <div class="project-visual">
+          <img src="assets/project-vista.png" alt="VISTA — Vehicle Intelligence and Safety Telematics Architecture visualization" loading="lazy">
+          <div class="project-visual-overlay"></div>
+          <span class="project-type-badge">Applied Research · IJVSS Journal-Track</span>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">VISTA — Vehicle Intelligence and Safety Telematics Architecture</h3>
+            <span class="project-subtitle">2025 – 2026</span>
+          </div>
+          <p class="project-desc">
+            A forensic crash-detection system designed for insurance and fleet evidence review, validated against real-world NHTSA CISS crash-pulse data with a tamper-evident, cryptographically verifiable evidence chain.
+          </p>
+          <div class="project-outcomes">
+            <div class="outcome-box reveal-spring delay-1">
+              <span class="outcome-number">01</span>
+              <p class="outcome-text"><span class="metric-inline">95.0%</span> crash detection accuracy against NHTSA CISS ground truth</p>
+            </div>
+            <div class="outcome-box reveal-spring delay-2">
+              <span class="outcome-number">02</span>
+              <p class="outcome-text"><span class="metric-inline">11.98 km/h</span> Delta-V mean absolute error across 160 stratified validation cases</p>
+            </div>
+            <div class="outcome-box reveal-spring delay-3">
+              <span class="outcome-number">03</span>
+              <p class="outcome-text">SHA-256/HMAC tamper-evident evidence architecture across inertial sensing, OBD-II, and audio/visual data</p>
+            </div>
+            <div class="outcome-box reveal-spring delay-4">
+              <span class="outcome-number">04</span>
+              <p class="outcome-text">Built on a sub-<span class="metric-inline">$60</span> hardware bill of materials, making forensic-grade detection accessible at low cost</p>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">PDTSA Algorithm</span>
+            <span class="tech-pill">NHTSA CISS Data</span>
+            <span class="tech-pill">SHA-256/HMAC</span>
+            <span class="tech-pill">OBD-II</span>
+            <span class="tech-pill">Inertial Sensing</span>
+            <span class="tech-pill">Signal Processing</span>
+            <span class="tech-pill">Forensic Validation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 — BFRB Sense -->
+      <div class="project-card reveal">
+        <div class="project-visual">
+          <img src="assets/project-bfrb.png" alt="BFRB Sense — Wearable Behaviour Recognition Edge AI visualization" loading="lazy">
+          <div class="project-visual-overlay"></div>
+          <span class="project-type-badge">Faculty-Guided Research Prototype</span>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3 class="project-title">BFRB Sense — Wearable Behaviour Recognition Edge AI</h3>
+            <span class="project-subtitle">May 2025 – Sep 2025</span>
+          </div>
+          <p class="project-desc">
+            A wearable edge-AI prototype for early intervention in body-focused repetitive behaviours (BFRBs), converting multimodal IMU, time-of-flight, and thermal sensor streams into 18-class behaviour recognition on the Child Mind Institute dataset.
+          </p>
+          <div class="project-outcomes">
+            <div class="outcome-box reveal-spring delay-1">
+              <span class="outcome-number">01</span>
+              <p class="outcome-text">Improved benchmark score from a <span class="metric-inline">0.88</span> baseline to <span class="metric-inline">0.93</span> internal score</p>
+            </div>
+            <div class="outcome-box reveal-spring delay-2">
+              <span class="outcome-number">02</span>
+              <p class="outcome-text">Rebuilt the data validation layer: quaternion repair, handedness canonicalization, ToF symmetry correction, outlier filtering, and 128-step windowing</p>
+            </div>
+            <div class="outcome-box reveal-spring delay-3">
+              <span class="outcome-number">03</span>
+              <p class="outcome-text">Trained modality-aware ensembles combining IMU CNN-SE-GRU branches, all-sensor fusion, and ToF 3D-CNN volumes</p>
+            </div>
+            <div class="outcome-box reveal-spring delay-4">
+              <span class="outcome-number">04</span>
+              <p class="outcome-text">Prepared outputs for TensorFlow Lite edge inference deployment</p>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">PyTorch</span>
+            <span class="tech-pill">Polars</span>
+            <span class="tech-pill">SciPy</span>
+            <span class="tech-pill">IMU/ToF/Thermal Sensors</span>
+            <span class="tech-pill">CNN-SE-GRU</span>
+            <span class="tech-pill">3D CNN</span>
+            <span class="tech-pill">TFLite</span>
+            <span class="tech-pill">AdamW/CUDA</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-separator"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SKILLS
+     ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="skills">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-label">Skills</span>
+      <h2 class="heading-lg">Technical Depth</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="skills-grid">
+
+      <!-- AI/ML Engineering -->
+      <div class="skill-card reveal-scale delay-1">
+        <div class="skill-card-header">
+          <div class="skill-card-icon">🧠</div>
+          <span class="skill-category-name">AI/ML Engineering</span>
+          <span class="skill-percentage" data-target="90">0%</span>
+        </div>
+        <div class="skill-progress-bar">
+          <div class="skill-progress-fill" data-progress="90"></div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">NLP</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">TensorFlow Lite</span>
+          <span class="skill-tag">scikit-learn</span>
+          <span class="skill-tag">Model Evaluation & Ablation</span>
+        </div>
+      </div>
+
+      <!-- Generative AI & LLM Systems -->
+      <div class="skill-card reveal-scale delay-2">
+        <div class="skill-card-header">
+          <div class="skill-card-icon">🤖</div>
+          <span class="skill-category-name">Generative AI &amp; LLM Systems</span>
+          <span class="skill-percentage" data-target="88">0%</span>
+        </div>
+        <div class="skill-progress-bar">
+          <div class="skill-progress-fill" data-progress="88"></div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">LLMs</span>
+          <span class="skill-tag">RAG</span>
+          <span class="skill-tag">Embeddings & Semantic Search</span>
+          <span class="skill-tag">Vector Databases</span>
+          <span class="skill-tag">Prompt Design</span>
+          <span class="skill-tag">Agent Workflows (ReAct/BDI)</span>
+          <span class="skill-tag">Structured Outputs</span>
+          <span class="skill-tag">LLM Safety Evaluation</span>
+        </div>
+      </div>
+
+      <!-- Edge AI & Embedded Systems -->
+      <div class="skill-card reveal-scale delay-3">
+        <div class="skill-card-header">
+          <div class="skill-card-icon">⚡</div>
+          <span class="skill-category-name">Edge AI &amp; Embedded Systems</span>
+          <span class="skill-percentage" data-target="92">0%</span>
+        </div>
+        <div class="skill-progress-bar">
+          <div class="skill-progress-fill" data-progress="92"></div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">On-Device Inference</span>
+          <span class="skill-tag">Model Quantization</span>
+          <span class="skill-tag">Latency/Memory Profiling</span>
+          <span class="skill-tag">Embedded Linux</span>
+          <span class="skill-tag">RTOS</span>
+          <span class="skill-tag">Microcontrollers</span>
+          <span class="skill-tag">Android/JNI</span>
+          <span class="skill-tag">Sensor Fusion</span>
+        </div>
+      </div>
+
+      <!-- Languages & Systems Programming -->
+      <div class="skill-card reveal-scale delay-4">
+        <div class="skill-card-header">
+          <div class="skill-card-icon">⌨️</div>
+          <span class="skill-category-name">Languages &amp; Systems Programming</span>
+          <span class="skill-percentage" data-target="85">0%</span>
+        </div>
+        <div class="skill-progress-bar">
+          <div class="skill-progress-fill" data-progress="85"></div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Rust</span>
+          <span class="skill-tag">C/C++</span>
+          <span class="skill-tag">Kotlin</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Bash/Linux</span>
+          <span class="skill-tag">Concurrency</span>
+          <span class="skill-tag">AES-256-GCM</span>
+          <span class="skill-tag">SHA-256/HMAC</span>
+        </div>
+      </div>
+
+      <!-- AI Systems Architecture & Delivery -->
+      <div class="skill-card reveal-scale delay-5">
+        <div class="skill-card-header">
+          <div class="skill-card-icon">🏗️</div>
+          <span class="skill-category-name">AI Systems Architecture &amp; Delivery</span>
+          <span class="skill-percentage" data-target="87">0%</span>
+        </div>
+        <div class="skill-progress-bar">
+          <div class="skill-progress-fill" data-progress="87"></div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Systems Design</span>
+          <span class="skill-tag">API Design (FastAPI/REST)</span>
+          <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">Vector Retrieval (HNSW/FTS5)</span>
+          <span class="skill-tag">Safety-Critical Design</span>
+          <span class="skill-tag">Customer Discovery</span>
+          <span class="skill-tag">Solution Scoping</span>
+        </div>
+      </div>
+
+      <!-- Research & Technical Leadership -->
+      <div class="skill-card reveal-scale delay-6">
+        <div class="skill-card-header">
+          <div class="skill-card-icon">📊</div>
+          <span class="skill-category-name">Research &amp; Technical Leadership</span>
+          <span class="skill-percentage" data-target="83">0%</span>
+        </div>
+        <div class="skill-progress-bar">
+          <div class="skill-progress-fill" data-progress="83"></div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Benchmark Design</span>
+          <span class="skill-tag">Validation Methodology</span>
+          <span class="skill-tag">Technical/Manuscript Writing</span>
+          <span class="skill-tag">Cross-Functional Ownership</span>
+          <span class="skill-tag">First-Principles Problem Solving</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-separator"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     ACHIEVEMENTS
+     ═══════════════════════════════════════════════════════════ -->
+<section class="section section-grid-bg" id="achievements">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-label">Achievements &amp; Recognition</span>
+      <h2 class="heading-lg">Built Under Real Constraints</h2>
+      <p class="body-md" style="margin-top:var(--space-sm);">Validated against real-world data.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <!-- Stat Counters -->
+    <div class="achievements-stats">
+      <div class="stat-box reveal-spring delay-1">
+        <div class="stat-number"><span class="counter" data-target="3">0</span><span class="stat-plus">+</span></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-box reveal-spring delay-2">
+        <div class="stat-number"><span class="counter" data-target="3">0</span></div>
+        <div class="stat-label">Major Research &amp; Engineering Projects</div>
+      </div>
+      <div class="stat-box reveal-spring delay-3">
+        <div class="stat-number"><span class="counter" data-target="15">0</span><span class="stat-plus">+</span></div>
+        <div class="stat-label">Client Systems Delivered</div>
+      </div>
+      <div class="stat-box reveal-spring delay-4">
+        <div class="stat-number"><span class="counter" data-target="2">0</span></div>
+        <div class="stat-label">Leadership &amp; Recognition Highlights</div>
+      </div>
+    </div>
+
+    <!-- Achievement Cards -->
+    <div class="achievements-grid">
+
+      <!-- Achievement 1 -->
+      <div class="achievement-card reveal-spring delay-1">
+        <div class="achievement-top">
+          <span class="achievement-badge">Research</span>
+          <span class="achievement-year">2026</span>
+        </div>
+        <h3 class="achievement-title">First-Author VISTA Manuscript — IJVSS Submission</h3>
+        <p class="achievement-institution">International Journal of Vehicle Structures &amp; Systems (Scopus-indexed, UGC CARE listed)</p>
+        <p class="achievement-desc">Converted real-world crash-safety evidence needs into an NHTSA CISS-validated system achieving <span class="metric-inline">95.0%</span> detection accuracy and <span class="metric-inline">11.98 km/h</span> Delta-V MAE, prepared as a first-author journal-track manuscript.</p>
+      </div>
+
+      <!-- Achievement 2 -->
+      <div class="achievement-card reveal-spring delay-2">
+        <div class="achievement-top">
+          <span class="achievement-badge">Product Innovation</span>
+          <span class="achievement-year">2025</span>
+        </div>
+        <h3 class="achievement-title">Rank 1 — AI Sign-Language-to-Speech Prototype</h3>
+        <p class="achievement-institution">Hackathon / Innovation Challenge</p>
+        <p class="achievement-desc">Built a computer-vision and speech-driven sign-language-to-speech prototype with LLM-assisted interaction, placing first in competition.</p>
+      </div>
+
+      <!-- Achievement 3 -->
+      <div class="achievement-card reveal-spring delay-3">
+        <div class="achievement-top">
+          <span class="achievement-badge">Technical Leadership</span>
+          <span class="achievement-year">2025–2026</span>
+        </div>
+        <h3 class="achievement-title">Nutan Incubation Centre Participant &amp; Hackathon Host</h3>
+        <p class="achievement-institution">PCET's Nutan College of Engineering &amp; Research</p>
+        <p class="achievement-desc">Participated in the college incubation programme, hosted a technical hackathon, and maintained an active, demo-and-documentation-driven open-source GitHub presence.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-separator"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="contact">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-label">Contact</span>
+      <h2 class="heading-lg">Let's Build Something That Has to Actually Work</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Left Column — Contact Form -->
+      <div class="contact-form-card reveal-left">
+        <h3 class="heading-sm" style="margin-bottom:var(--space-xl);">Send Me a Message</h3>
+        <form id="contactForm" onsubmit="return handleContactSubmit(event)">
+          <div class="form-group">
+            <input type="text" id="contact-name" name="name" placeholder=" " required autocomplete="name">
+            <label for="contact-name">Full Name</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="contact-email" name="email" placeholder=" " required autocomplete="email">
+            <label for="contact-email">Email Address</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="contact-subject" name="subject" placeholder=" " required>
+            <label for="contact-subject">Subject</label>
+            <span class="form-line"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="contact-message" name="message" placeholder=" " required rows="4"></textarea>
+            <label for="contact-message">Message</label>
+            <span class="form-line"></span>
+          </div>
+          <button type="submit" class="btn-send" id="btn-send-message">
+            Send Message
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Right Column — Contact Information -->
+      <div class="contact-info-panel reveal-right">
+        <h3>Contact Information</h3>
+        <div class="contact-info-list">
+          <a href="mailto:adityapaagare619@gmail.com" class="contact-info-row" id="contact-row-email">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-text">adityapaagare619@gmail.com</div>
+            </div>
+          </a>
+          <div class="contact-info-row" id="contact-row-phone">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-text">+91 7875292693</div>
+            </div>
+          </div>
+          <div class="contact-info-row" id="contact-row-location">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-text">Pune, India</div>
+            </div>
+          </div>
+          <a href="https://linkedin.com/in/aditya-pagare-891606285" target="_blank" rel="noopener noreferrer" class="contact-info-row" id="contact-row-linkedin">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">LinkedIn</div>
+              <div class="contact-info-text">aditya-pagare-891606285</div>
+            </div>
+          </a>
+          <a href="https://github.com/AdityaPagare619" target="_blank" rel="noopener noreferrer" class="contact-info-row" id="contact-row-github">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">GitHub</div>
+              <div class="contact-info-text">AdityaPagare619</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════ -->
+<footer class="footer" id="footer">
+  <div class="footer-inner">
+    <p class="footer-name">Aditya Pagare</p>
+    <p class="footer-tagline">Hardware-first. Constraint-driven. Built to survive contact with the real world.</p>
+    <div class="footer-social">
+      <a href="https://github.com/AdityaPagare619" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/aditya-pagare-891606285" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="mailto:adityapaagare619@gmail.com" class="social-icon" aria-label="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </div>
+    <p class="footer-copyright">&copy; 2026 Aditya Pagare. Engineered with precision.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
