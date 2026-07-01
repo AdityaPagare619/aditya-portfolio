@@ -1,0 +1,8 @@
+# Exclude non-portfolio files
+Aditya_Pagare_Portfolio_Prompt.md
+Portfolio_Guide_gauri_exe.docx
+Portfolio_Prompt_gauri_exe.docx
+Resume/
+IMAGES/
+read_docx.py
+docx_output.txt
